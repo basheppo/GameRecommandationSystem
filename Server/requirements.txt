@@ -1,2 +1,7 @@
-fastappi
+fastapi
 sqlalchemy
+pydantic
+uvicorn
+pandas
+pymssql
+textdistance
