@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from typing import Optional
 from pydantic import BaseModel
-from models import Base
-from database import engine
-from routers import games
+from app.models import Base
+from app.database import engine
+from app.routers import games
 Base.metadata.create_all(engine)
 app = FastAPI()
 

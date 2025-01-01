@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from database import get_db
-from models import Game
-from schemas import GameResponse
+from app.database import get_db
+from app.models import Game
+from app.schemas import GameResponse
 import textdistance
 router = APIRouter()
 

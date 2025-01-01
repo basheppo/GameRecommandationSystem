@@ -37,4 +37,4 @@ class Game(Base):
     short_description = Column(Text, nullable=True)
     own_description = Column(Text, nullable=True)
     min_owners = Column(Integer, nullable=True)
-    embedding = Column(ARRAY(Float), nullable=True) 
+    embedding = Column(Text, nullable=True) 

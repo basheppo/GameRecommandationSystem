@@ -1,7 +1,9 @@
 fastapi
-sqlalchemy
-pydantic
 uvicorn
-pandas
-pymssql
+sqlalchemy
+python-dotenv
+pydantic
+pymysql
+pyodbc
 textdistance
+pandas
