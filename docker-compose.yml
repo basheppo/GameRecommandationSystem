@@ -8,10 +8,10 @@ services:
     depends_on:
       - db
     environment:
-      - DATABASE_URL=${DATABASE_URL}
+      - DATABASE_URL=mssql+pyodbc://sa:Badr1234!@db:1433/master?driver=ODBC+Driver+17+for+SQL+Server
     volumes:
       - ./Server/app:/code/app
-      - ./Data:/data 
+      - ./Datasets:/data 
     networks:
       - my_network
     command: >
@@ -26,30 +26,16 @@ services:
       - "1433:1433"
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=${DB_PASSWORD}
-      - MSSQL_USER=${DB_USER}
-      - MSSQL_DATABASE=${DB_NAME}
+      - MSSQL_SA_PASSWORD=Badr1234!
+      - MSSQL_USER=sa
+      - MSSQL_DATABASE=master
     volumes:
       - mssql_data:/var/opt/mssql
-      - ./Data:/shared_data
     networks:
       - my_network
 
 
 
-  frontend:
-    build: ./Client
-    ports:
-      - "3000:3000"
-    environment:
-      - NEXT_PUBLIC_API_URL=http://web:8000  
-    volumes:
-      - ./Client:/app
-    networks:
-      - my_network
-    depends_on:
-      - web
-    command: bash -c "npm install && npm run build && npm start"  
 volumes:
   mssql_data:
 

@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Float, Boolean, Text,ARRAY
+from sqlalchemy import Column, Integer, String, Float, Text
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -37,4 +37,4 @@ class Game(Base):
     short_description = Column(Text, nullable=True)
     own_description = Column(Text, nullable=True)
     min_owners = Column(Integer, nullable=True)
-    embedding = Column(Text, nullable=True) 
+    embedding = Column(Text, nullable=False) 

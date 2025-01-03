@@ -3,7 +3,9 @@ uvicorn
 sqlalchemy
 python-dotenv
 pydantic
-pymysql
+pymssql
 pyodbc
 textdistance
 pandas
+scikit-learn
+numpy

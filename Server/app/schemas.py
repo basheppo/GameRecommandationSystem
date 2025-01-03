@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import List
 
 class GameResponse(BaseModel):
     appid: int
@@ -12,4 +13,12 @@ class GameResponse(BaseModel):
     genres:str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
+class GameEmbeddingResponse(BaseModel):
+    appid: int
+    name: str
+    embedding: str 
+
+
+    class Config:
+        from_attributes = True

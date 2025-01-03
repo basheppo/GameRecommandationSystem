@@ -24,12 +24,7 @@ function Navbar() {
         >
           Recommendations
         </Link>
-        <Link
-          className="hover:bg-white hover:text-black border-2 text-center p-4 "
-          href="/search"
-        >
-          Search
-        </Link>
+
         <Link
           className="hover:bg-white hover:text-black border-2  text-center p-4 "
           href="/about"
