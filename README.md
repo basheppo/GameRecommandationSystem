@@ -95,7 +95,7 @@ Detailed information about the specified game.
 
 ## Troubleshooting
 
-### Common Issues That i encountered and some advices that may be useful 
+### Common Issues I Encountered and Some Advice That May Be Useful
 
 1. **Permission Denied Errors**:
    - If you encounter an `EACCES` error, ensure that you have proper permissions for the `.next` directory:
@@ -117,8 +117,8 @@ Detailed information about the specified game.
 
 Here are two screenshots of the app UI:
 
-### Screenshot 1:
+### Home Page 1:
 ![Home Page](images/homepage.png)
 
-### Screenshot 2:
+### Recommandations 2:
 ![Recommandations ](images/recoms.png)
